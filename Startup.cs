@@ -33,6 +33,7 @@ namespace dotnet_rpg_updated
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "dotnet_rpg_updated", Version = "v1" });
             });
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<ICharacterService, CharacterService>();
         }
 
